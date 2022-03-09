@@ -30,6 +30,7 @@ header {
 .header-body .title h1 {
   font-size: 35px;
   font-weight: bold;
+  cursor: pointer;
   color: #5e76d4;
 }
 
@@ -73,6 +74,11 @@ header .actions nav ul li button {
 header .actions nav ul li button:hover {
   opacity: 0.7;
   transform: translateX(7px);
+}
+
+header .actions nav ul li button:active {
+  opacity: 0.9;
+  font-size: 20px;
 }
 
 header .actions nav ul li a {
@@ -183,11 +189,54 @@ header .actions nav ul li a:hover {
 .vaccine-form:hover {
   transform: translatey(-7px);
 }
-.vaccine-form .form-item h2 {
+.vaccine-form .form-item input {
+  padding: 5px;
   margin-top: 10px;
   margin-left: 40px;
+  width: 180px;
+  font-weight: bold;
+  border: none;
   color: #284678;
   font-size: 25px;
+}
+
+.vaccine-form .form-item input:focus {
+  outline: none;
+  border-radius: 8px;
+  background-color: #eaebf1;
+}
+
+.vaccine-form .form-item select {
+  appearance: none;
+  margin-left: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  width: 170px;
+  font-weight: bold;
+  border: none;
+  color: #284678;
+  font-size: 25px;
+}
+
+.vaccine-form .form-item select:focus {
+  outline: none;
+  border-radius: 8px;
+  background-color: #eaebf1;
+}
+.vaccine-form .form-item select option {
+  appearance: none;
+  padding: 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: 4px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .submit {
@@ -237,12 +286,13 @@ header .actions nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: left;
+  justify-content: center;
   margin-bottom: 20px;
   height: 100vh;
 }
 
 .fact h1 {
+  margin-top: 50px;
   color: #1f3e72;
   font-size: 35px;
 }
@@ -257,13 +307,13 @@ header .actions nav ul li a:hover {
 .fact .fact-row {
   display: inline-flex;
   width: 100%;
-  align-content: space-between;
+  justify-content: space-around;
 }
 
 .fact .fact-row .fact-item {
-  margin: 5px;
   height: 250px;
-  width: 100%;
+  width: 80%;
+  margin-right: 16px;
   border-radius: 9px;
   box-shadow: 5px 5px 7px 5px rgb(231, 236, 252, 0.8);
   padding: 15px;
@@ -471,4 +521,57 @@ header .actions nav ul li a:hover {
   padding: 40px 0;
   background-color: #eef1ff;
   height: 300px;
+}
+
+.container-footer footer .footer-column {
+  display: flex;
+  height: 220px;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+}
+.container-footer footer .footer-column h2 {
+  color: #5015da;
+  font-size: 35px;
+}
+.container-footer footer .footer-column p {
+  color: #8c95ae;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.container-footer footer .footer-column .vaccine-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-footer footer .footer-column .vaccine-links h3 {
+  color: #253375;
+  font-size: 25px;
+}
+.container-footer footer .footer-column .vaccine-links ul li {
+  list-style: none;
+  margin-top: 40px;
+  cursor: pointer;
+  margin-bottom: 35px;
+  color: #929bb3;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.container-footer footer .legal {
+  display: flex;
+  height: 100%;
+  padding-bottom: 15px;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container-footer footer .legal span {
+  font-size: 16px;
+  color: #858ea8;
 }

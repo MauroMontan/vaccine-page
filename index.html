@@ -68,15 +68,26 @@
                 <i class="fa-solid fa-location-dot form-title"></i>
                 Location</a
               >
-              <h2>Jakarta Utara</h2>
+              <div>
+                <input type="text" value="Jakarta Utara" />
+              </div>
             </div>
             <div class="form-item">
               <a href=""> <i class="fa-solid fa-calendar-days"></i> Date</a>
-              <h2>08 July 2021</h2>
+              <div>
+                <input type="date" />
+              </div>
             </div>
             <div class="form-item">
               <a href=""><i class="fa-solid fa-syringe"></i> Vaccine Type</a>
-              <h2>Mederna</h2>
+              <div>
+                <select id="cars" name="vaccine-list">
+                  <option value="astrazeneca">AstraZeneca</option>
+                  <option value="sinovac">SINOVAC</option>
+                  <option value="pfizer">Pfizer</option>
+                  <option value="moderna">moderna</option>
+                </select>
+              </div>
             </div>
 
             <button class="submit">submit</button>
@@ -262,12 +273,50 @@
 
     <div class="container-footer">
       <footer>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          dolor expedita optio mollitia earum, id in odit omnis sit cumque
-          explicabo recusandae aliquam delectus, dolorum quidem assumenda
-          aperiam officiis! Id.
-        </p>
+        <div class="footer-column">
+          <div class="about-vaccine">
+            <h2>Vaccination</h2>
+            <p>
+              Our goal is to help the <br />
+              world free from the <br />
+              ongoing pandemic
+            </p>
+          </div>
+          <div class="vaccine-links">
+            <div class="about-links">
+              <h3>About</h3>
+              <ul>
+                <li>About us</li>
+                <li>Features</li>
+                <li>News and blogs</li>
+              </ul>
+            </div>
+            <div class="about-links">
+              <h3>Company</h3>
+              <div>
+                <ul>
+                  <li>How we work</li>
+                  <li>Capital</li>
+                  <li>Security</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-links">
+              <h3>Support</h3>
+              <div>
+                <ul>
+                  <li>FAQs</li>
+                  <li>Support center</li>
+                  <li>Contact us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <span>@2021 Vaccination. All rights reserved</span>
+          <span> Terms & Agreements Privacy Policy </span>
+        </div>
       </footer>
     </div>
   </body>
