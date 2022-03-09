@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 2;
+}
+
+.header-body {
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-body .title h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #5e76d4;
+}
+
+header .actions {
+  height: 90px;
+}
+
+.actions nav {
+  height: 100%;
+}
+
+header .actions nav ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+header .actions nav ul li {
+  height: 100%;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relatives;
+}
+
+header .actions nav ul li button {
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  background-color: #2545c3;
+  box-shadow: 4px 15px 15px #abbbea;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header .actions nav ul li button:hover {
+  opacity: 0.7;
+  transform: translateX(7px);
+}
+
+header .actions nav ul li a {
+  transition: all 0.3s ease 0s;
+  color: #7a889f;
+  font-weight: bold;
+  font-size: 20px;
+}
+header .actions nav ul li a:hover {
+  color: #2545c3;
+  transform: translateY(-5px);
+}
+
+/* Container cover */
+
+.container-cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/cover.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%;
+}
+
+.container-cover .cover-content {
+  max-width: 1000px;
+  height: 100vh;
+  margin: auto;
+  text-align: left;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-cover .cover-content h1 {
+  margin-top: 90px;
+  color: rgb(37, 65, 110);
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.container-cover .cover-content p {
+  color: #7a879c;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 21px;
+}
+.container-cover .cover-content .cover-actions {
+  margin-top: 50px;
+}
+
+.container-cover .cover-content .cover-actions a {
+  margin-top: 20px;
+  color: #6b7fa2;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.container-cover .cover-content .cover-actions a {
+  margin-top: 5px;
+  color: #25416e;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.container-cover .cover-content .cover-actions a i {
+  background-color: rgba(255, 255, 0, 0.3);
+  color: #ffd012;
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.cover-content .schedule-container {
+  position: relative;
+  margin-top: 70px;
+}
+
+.cover-content .schedule-container a i {
+  background-color: rgb(94, 118, 212, 0.2);
+  color: #3454d2;
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.cover-content .schedule-container a {
+  color: #25416e;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 40px;
+}
+.vaccine-form {
+  margin-top: 20px;
+  width: 85%;
+  box-shadow: 10px 20px 30px 10px rgba(0, 0, 255, 0.2);
+  background-color: rgb(255, 255, 255, 0.8);
+  border: none;
+  padding: 30px;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vaccine-form:hover {
+  transform: translatey(-7px);
+}
+.vaccine-form .form-item h2 {
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #284678;
+  font-size: 25px;
+}
+
+.submit {
+  background-color: #3451c3;
+  color: white;
+  height: 65px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 4px 15px 15px #abbbea;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit:hover {
+  opacity: 0.9;
+  transform: translateX(5px);
+}
+
+.logos-container {
+  max-width: 1000px;
+  display: flex;
+  margin: 0;
+}
+
+.vaccines-logos {
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.vaccine-logo img {
+  width: 200px;
+  object-fit: contain;
+  height: 60px;
+  margin: 20px;
+}
+
+.fact {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 20px;
+  height: 100vh;
+}
+
+.fact h1 {
+  color: #1f3e72;
+  font-size: 35px;
+}
+
+.fact p {
+  color: #bec2cb;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.fact .fact-row {
+  display: inline-flex;
+  width: 100%;
+  align-content: space-between;
+}
+
+.fact .fact-row .fact-item {
+  margin: 5px;
+  height: 250px;
+  width: 100%;
+  border-radius: 9px;
+  box-shadow: 5px 5px 7px 5px rgb(231, 236, 252, 0.8);
+  padding: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.fact .fact-row .fact-item:hover {
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 255, 0.1);
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+
+.fact .fact-row .fact-item i {
+  color: #284678;
+  background-color: #e0e5f6;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 29px;
+}
+
+.fact .fact-row .fact-item h2 {
+  margin-top: 15px;
+  color: #2f3e7b;
+  font-size: 20px;
+}
+
+.fact .fact-row .fact-item p {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #7a849d;
+}
+
+.preparations-container {
+  width: 100%;
+  margin: auto;
+  padding-right: 200px;
+  height: 100vh;
+  display: flex;
+  background-image: url("./assets/advices.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 500px;
+  align-items: center;
+  justify-content: end;
+}
+
+.preparations-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.preparations-content h1 {
+  margin-top: 25px;
+  color: #243173;
+  font-size: 44px;
+}
+
+.preparations-content p {
+  margin-top: 35px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #a4abbd;
+  font-size: 20px;
+}
+
+.list ul li {
+  box-shadow: 5px 5px 7px 5px rgb(231, 236, 252, 0.2);
+  color: #364680;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border: solid 0.02px rgb(128, 128, 128, 0.07);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.list ul li:hover {
+  transform: translateX(-10px);
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 255, 0.1);
+}
+
+.list ul li i {
+  font-size: 20px;
+  background-color: #ebf0ff;
+  border-radius: 100%;
+  color: #4200c9;
+  padding: 6px;
+}
+
+.emergency-container {
+  width: 100%;
+  margin: auto;
+  padding-left: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/contact.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 600px;
+  justify-content: end;
+}
+
+.emergency-container h1 {
+  position: relative;
+  margin: 0;
+  top: 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #33447e;
+}
+.emergency-container p {
+  margin-top: 20px;
+  color: #8a92a9;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.emergency-container .card-container .card-row {
+  display: flex;
+  margin: 0;
+}
+
+.emergency-container .contact-card {
+  border-radius: 6px;
+  margin-right: 40px;
+  background-color: white;
+  padding: 23px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 7px 5px rgb(231, 236, 252, 0.8);
+
+  transition: all 0.3s ease 0s;
+
+  height: 200px;
+}
+
+.emergency-container .contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 255, 0.1);
+}
+
+.emergency-container .contact-card .row {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.emergency-container .contact-card .row i {
+  color: #4600ce;
+  background-color: #f1f4ff;
+  border-radius: 7px;
+  font-size: 30px;
+  margin-right: 29px;
+  padding: 8px;
+}
+.emergency-container .contact-card .row h3 {
+  margin-top: 4px;
+  color: #374781;
+  font-size: 20px;
+}
+
+.emergency-container .contact-card .row h4 {
+  color: #99a1b5;
+  margin-top: 6px;
+  font-size: 16px;
+}
+.emergency-container .contact-card button {
+  color: #4600ce;
+  background-color: #d4d9ec;
+  box-shadow: 5px 5px 7px 5px rgba(213, 220, 243, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.emergency-container .contact-card button:hover {
+  background-color: #4400cb;
+  color: white;
+}
+.emergency-container .card-container .card-row {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container-footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #eef1ff;
+  height: 300px;
+}
