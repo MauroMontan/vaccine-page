@@ -2,4 +2,4 @@
 
 Concept for vaccination page made with css and html
 
-![screenshot](./screenshots/screenshots.png) 
+![screenshot](./screenshots/screenshot.png)
